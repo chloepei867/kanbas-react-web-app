@@ -1,4 +1,227 @@
-<table width="100%">
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Account/AccountNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Settings/Details/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/images/neu_logo.png" alt="" width="80px">
+                </li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="far fa-user-circle" style="color: #7f8694;"></i>
+                        Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-solid fa-book"></i>
+                        Courses</a></li>
+                <li><a href="#">
+                        <i class="fas fa-calendar-alt"></i>
+                        Calendar</a></li>
+                <li><a href="#">
+                        <i class="fas fa-inbox fa-lg"></i> <br>
+                        Inbox</a></li>
+                <li><a href="#">
+                        <i class="fas fa-history fa-lg"></i>
+                        History</a></li>
+                <li><a href="#">
+                        <i class="fas fa-desktop"></i> <br>
+                        Studio</a></li>
+                <li><a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Commons</a></li>
+                <li><a href="#">
+                        <i class="fas fa-question-circle"></i> <br>
+                        Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">CS5610.17387.202410</a></li>
+                            <img class="wd-course-home-breadcrumb-img" src="/images/arrow.svg" alt="">Settings
+
+                        </ol>
+                    </nav>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <ul class="wd-course-navigation">
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li><a href="/Kanbas/Courses/assignments/screen.html">Assignments</a>
+                        </li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/Settings/Details/screen.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="col wd-course-settings-details">
+                    <div class="row mb-3">
+                        <div class="col">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page"
+                                        href="/Kanbas/Courses/Settings/Details/screen.html">Course Details</a>
+                                </li>
+                                <li class=" nav-item wd-course-settings-detils-nav-item-deactive">
+                                    <a class="nav-link" href="#">Sections</a>
+                                </li>
+                                <li class="nav-item wd-course-settings-detils-nav-item-deactive">
+                                    <a class="nav-link"
+                                        href="/Kanbas/Courses/Settings/Navigation/screen.html">Navigation</a>
+                                </li>
+                                <li class="nav-item wd-course-settings-detils-nav-item-deactive">
+                                    <a class="nav-link" aria-disabled="true">Apps</a>
+                                </li>
+                                <li class="nav-item wd-course-settings-detils-nav-item-deactive">
+                                    <a class="nav-link" aria-disabled="true">Feature Options</a>
+                                </li>
+                                <li class="nav-item wd-course-settings-detils-nav-item-deactive">
+                                    <a class="nav-link" aria-disabled="true">Integrations</a>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col fs-2">
+                            Course Details
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Image:
+                        </div>
+                        <div class="col">
+                            <input type="file" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Name:
+                        </div>
+                        <div class="col">
+                            CS4550 12631 Web Development SEC 01 Fall 2023 [BOS-1-TR]
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Course Code:
+                        </div>
+                        <div class="col">
+                            CS4550.12631.202410
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Blueprint Course:
+                        </div>
+                        <div class="col">
+                            No
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Time Zone
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="" id="">
+                                <option value="">Eastern Time (US & Canada) (-05:00/-04:00)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            SIS ID:
+                        </div>
+                        <div class="col">
+                            CS4550.12631.202410
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Participation
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="" id="">
+                                <option value="">Term</option> <br>
+                            </select>
+                            <br>
+                            <label class="form-label" for="start">Start</label>
+                            <input class="form-control" type="date">
+                            <br>
+                            <label class="form-label" for="end">End</label><br>
+                            <input class="form-control" type="date">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Language
+                        </div>
+                        <div class="col">
+                            <select class="form-select" name="" id="">
+                                <option value="">Not set (user-configurable, defaults to English (Unit))</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-2">
+                            Description
+                        </div>
+                        <div class="col">
+                            <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <hr>
+                    <button class="btn btn-danger float-end mb-3">Update Course Details</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- <table width="100%">
     <tr valign="top">
         <td>
             <ul>
@@ -98,7 +321,7 @@
                 <tr>
                     <td>Description</td>
                     <td>
-                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                        
                     </td>
                 </tr>
             </table>
@@ -107,4 +330,4 @@
 
         </td>
     </tr>
-</table>
+</table> -->

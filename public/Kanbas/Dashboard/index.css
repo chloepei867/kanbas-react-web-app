@@ -1,0 +1,19 @@
+/** Dashboard **/
+
+.wd-dashboard-grid .col {
+    width: 270px;
+}
+
+.wd-dashboard {
+    width: 300px;
+}
+
+.wd-dashboard-container {
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.card-title a {
+    color: rgb(66, 173, 215);
+    text-decoration: none;
+}

@@ -1,0 +1,29 @@
+.wd-course-assignment {
+    width: 1050px;
+}
+
+.wd-course-assignment ul {
+    border-left: 2px solid green;
+}
+
+.wd-course-assignment-icon {
+    color: green;
+    width: 1.875rem;
+    height: 1.875rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wd-course-assignment-info {
+    overflow-wrap: break-word;
+    flex: 1;
+    min-width: 1px;
+    margin: 0 12px;
+}
+
+.wd-course-assignment-info a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}

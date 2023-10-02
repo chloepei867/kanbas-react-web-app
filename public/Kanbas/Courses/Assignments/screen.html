@@ -4,6 +4,255 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/vendors/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/vendors/fontawesome/css/all.css">
+    <link rel="stylesheet" href="/Kanbas/KanbasNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Account/AccountNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/CourseNavigation/index.css">
+    <link rel="stylesheet" href="/Kanbas/Account/Profile/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Home/index.css">
+    <link rel="stylesheet" href="/Kanbas/Courses/Assignments/index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wd-flex-row-container">
+        <div class="wd-bg-color-black">
+            <ul class="wd-kanbas-navigation">
+                <li>
+                    <img src="/images/neu_logo.png" alt="" width="80px">
+                </li>
+                <li><a href="/Kanbas/Account/Profile/screen.html">
+                        <i class="far fa-user-circle" style="color: #7f8694;"></i>
+                        Account</a></li>
+                <li><a href="/Kanbas/Dashboard/screen.html">
+                        <i class="fa fa-tachometer-alt"></i>
+                        Dashboard</a></li>
+                <li class="wd-active"><a href="/Kanbas/Courses/Home/screen.html">
+                        <i class="fa fa-solid fa-book"></i>
+                        Courses</a></li>
+                <li><a href="#">
+                        <i class="fas fa-calendar-alt"></i>
+                        Calendar</a></li>
+                <li><a href="#">
+                        <i class="fas fa-inbox fa-lg"></i> <br>
+                        Inbox</a></li>
+                <li><a href="#">
+                        <i class="fas fa-history fa-lg"></i>
+                        History</a></li>
+                <li><a href="#">
+                        <i class="fas fa-desktop"></i> <br>
+                        Studio</a></li>
+                <li><a href="#">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Commons</a></li>
+                <li><a href="#">
+                        <i class="fas fa-question-circle"></i> <br>
+                        Help</a></li>
+            </ul>
+        </div>
+        <div>
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="#">CS5610.17387.202410</a></li>
+                            <img class="wd-course-home-breadcrumb-img" src="/images/arrow.svg" alt="">Assignments
+
+                        </ol>
+                    </nav>
+                </div>
+                <div class="col mt-1">
+                    <button class="float-end">
+                        <i class="fas fa-glasses"></i>
+                        Student View</button>
+                </div>
+                <hr>
+            </div>
+            <div class="row">
+                <div class="col-2">
+                    <ul class="wd-course-navigation">
+                        <li><a href="/Kanbas/Courses/Home/screen.html">Home</a></li>
+                        <li><a href="/Kanbas/Courses/Modules/screen.html">Modules</a></li>
+                        <li><a href="#">Piazza</a></li>
+                        <li><a href="#">Zoom Meetings</a></li>
+                        <li class="wd-active"><a href="/Kanbas/Courses/assignments/screen.html">Assignments</a>
+                        </li>
+                        <li><a href="#">Quizzes</a></li>
+                        <li><a href="/Kanbas/Courses/Grades/screen.html">Grades</a></li>
+                        <li><a href="#">People</a></li>
+                        <li><a href="#">Panopto Video</a></li>
+                        <li><a href="#">Discussions</a></li>
+                        <li><a href="#">Announcements</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Files</a></li>
+                        <li><a href="#">Rubrics</a></li>
+                        <li><a href="#">Outcomes</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Syllabus</a></li>
+                        <li><a href="/Kanbas/Courses/Settings/Details/screen.html">Settings</a></li>
+                    </ul>
+                </div>
+                <div class="col-10">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Search for Assignment">
+                        </div>
+                        <div class="col">
+                            <div class="float-end">
+                                <button class="btn btn-secondary float-end">
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                </button>
+                                <button class="btn btn-danger float-end">
+                                    <i class="fas fa-plus" style="color: #d2d5da;"></i>
+                                    Assignment</button>
+                                <button class="btn btn-secondary float-end">
+                                    <i class="fas fa-plus" style="color: #d2d5da;"></i>
+                                    Group</button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row wd-course-assignment">
+                        <div class="col">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item list-group-item-secondary ">
+                                    Assignments
+
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-plus float-end wd-course-home-title-plus"
+                                        style="color: #66686b;"></i>
+
+                                    <!-- <i class="fas fa-check-circle float-end"></i> -->
+                                    </i>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i>
+                                        </div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A1
+                                                    SETUP</a></div>
+                                            <div>
+                                                Weeko-SETUP- Week starting on Monday September 5th (9/5/2022) Module |
+                                                <br>
+                                                Due Sep 18, 2022 at 11:59pm | 100 pts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i></div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A2
+                                                    HTML</a></div>
+                                            <div>
+                                                Week 1 - HTML - Week starting on Monday September 12th (9/12/2022)
+                                                Module | <br>
+                                                Due Sep 25, 2022 at 11:59pm | 100 pts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i></div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A3
+                                                    CSS</a></div>
+
+                                            <div>
+                                                Week2- CSS - Week starting on Monday September 19th (9/19/2022)
+                                                Module |
+                                                <br>
+                                                Due Oct 2, 2022 at 11:59pm | 100 pts
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i></div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A4
+                                                    BOOTSTRAP</a></div>
+                                            <div>
+                                                <div>
+                                                    Week3 - Bootstrap - Week starting on Monday September 26th
+                                                    (9/26/2022)
+                                                    Module | <br>
+                                                    Due Oct 10, 2022 at 11:59pm | 100 pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i></div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A5
+                                                    JAVASCRIPT</a></div>
+                                            <div>
+                                                Week 4 - JavaScript - Week starting on Monday October 3rd (10/3/2022)
+                                                Module | <br>
+                                                Due Oct 16, 2022 at 11:59pm | 100 pts
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+                                </li>
+                                <li class="list-group-item">
+                                    <div class="d-flex">
+                                        <div class="wd-course-assignment-icon"><i class="fas fa-book"></i></div>
+                                        <div class="wd-course-assignment-info">
+                                            <div><a href="/Kanbas/Courses/Assignments/EditAssignments/screen.html">A6
+                                                    REACT</a></div>
+                                            <div>
+                                                <div>
+                                                    Week 5 - React & Routing - Week starting Monday October 10th
+                                                    (10/10/2022) Module | <br>
+                                                    Due Oct 23, 2022 at 11:59pm | 100 pts
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <i class="fas fa-ellipsis-v float-end"></i>
+                                    <i class="fas fa-check-circle float-end"></i>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
 
@@ -166,4 +415,4 @@
     </table>
 </body>
 
-</html>
+</html> -->
