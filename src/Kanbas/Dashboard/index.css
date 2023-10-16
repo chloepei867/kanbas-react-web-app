@@ -1,0 +1,44 @@
+/** Dashboard **/
+
+.wd-dashboard-grid .col {
+    width: 270px;
+    padding-left:23px;
+}
+
+.wd-dashboard {
+    width: 300px;
+}
+
+.wd-dashboard-container {
+    margin-top:-24px;
+    padding-top:0px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.card-title a {
+    color: #0374B5;
+    text-decoration: none;
+}
+
+.card-title {
+    font-size: 15px;
+}
+
+.card-text {
+    color:#6B7780;
+}
+
+.wd-dashboard-title1 {
+    font-size: 38px;
+    font-weight: 200;
+    color: rgb(57, 75, 88);
+    padding-left:0px;
+}
+
+.wd-dashboard-title2 {
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(57, 75, 88);
+    padding-left:23px;
+}

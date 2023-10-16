@@ -1,0 +1,11 @@
+[
+    { "_id": "A101", "title": "A1 SETUP", "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS101" },
+    { "_id": "A102", "title": "A2 HTML", "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS101" },
+    { "_id": "A103", "title": "A3 CSS",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS101" },
+    { "_id": "A201", "title": "A4 BOOTSTRAP",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS102" },
+    { "_id": "A202", "title": "A5 JAVASCRIPT",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS102" },
+    { "_id": "A203", "title": "A6 REACT",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS102" },
+    { "_id": "A301", "title": "Structural Design Task",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS103" },
+    { "_id": "A302", "title": "Orbital Calculations",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS103" },
+    { "_id": "A303", "title": "Systems Engineering Exam",  "dueDate": "Sep 18, 2022 at 11:59pm", "points":"100pts", "course": "RS103" }
+  ]

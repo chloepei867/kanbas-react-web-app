@@ -1,0 +1,58 @@
+.wd-assignment-search-bar {
+    margin-top: 20px;
+    
+}
+
+
+.wd-assignment-item {
+    border-left: 2px solid green;
+}
+
+.wd-course-assignment-icon
+{
+    color: green;
+    width: 1.5rem;
+    height: 1.5rem;
+    display: center;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+}
+
+.wd-course-assignment-icon-ellipsis {
+    width: 1.5rem;
+        height: 1.5rem;
+        display: center;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+}
+
+.wd-course-assignment-info {
+    overflow-wrap: break-word;
+    flex: 1;
+    min-width: 1px;
+    margin: 0 12px;
+    text-align: center;
+    font-weight: 1.5rem;
+}
+
+.wd-course-assignment-info a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.wd-assignment-item h2 {
+    background: #f5f5f5;
+    margin:0px; 
+    padding: 10px; 
+    font-size: 16px; 
+    border: 1px solid #e6e6e6;
+    width: 1020px;
+}
+
+.wd-course-assignment .list-group-item {
+    width: 1020px;
+    padding-right:0px;
+}
