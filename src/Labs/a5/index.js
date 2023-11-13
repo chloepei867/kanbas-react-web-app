@@ -1,13 +1,21 @@
-function Asd() {
-  const ewq = [321, 432, 543, 654, 765];
-  const tre = (ytr, uyt) => {
-    const poi = ewq.map((iuy) => (iuy === ytr ? uyt : iuy));
-    console.log(poi);
-  };
+import EncodingParametersInURLs from "./EncodingParametersInURLs";
+import WorkingWithObjects from "./WorkingWithObjects";
+import WorkingWithArrays from "./WorkingWithArrays";
+// import SimpleAPIExamples from "./SimpleAPIExamples";
+function Assignment5() {
   return (
     <div>
-      <button onClick={() => tre(543, 999)}>BUTTON</button>
+      <h1>Assignment 5</h1>
+      <div className="list-group">
+        <a href="http://localhost:4000/a5/welcome" className="list-group-item">
+          Welcome
+        </a>
+      </div>
+      {/* <SimpleAPIExamples /> */}
+      <WorkingWithArrays />
+      <WorkingWithObjects />
+      <EncodingParametersInURLs />
     </div>
   );
 }
-export default Asd;
+export default Assignment5;

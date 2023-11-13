@@ -15,12 +15,25 @@ import AssignmentEditor from "./Assignments/AssignmentEditor";
 import Grades from "./Grades";
 import { VscThreeBars } from "react-icons/vsc";
 import "./index.css";
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-function Courses({ courses }) {
+function Courses() {
   const { courseId } = useParams();
+  const [course, setCourse] = useState({});
+  const URL = "http://localhost:4000/api/courses";
+  const findCourseById = async (courseId) => {
+    const response = await axios.get(`${URL}/${courseId}`);
+    setCourse(response.data);
+  };
+
+  useEffect(() => {
+    findCourseById(courseId);
+  }, [courseId]);
+
   const { pathname } = useLocation();
   const [empty, kanbas, cour, id, screen] = pathname.split("/");
-  const course = courses.find((course) => course._id === courseId);
+  // const course = courses.find((course) => course._id === courseId);
   return (
     <div>
       <div className="wd-dashboard-breadcrumb">

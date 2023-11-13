@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -6,14 +6,41 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules,
 } from "./modulesReducer";
+import * as client from "./client";
 import "./index.css";
+import { findModulesForCourse, createModule } from "./client";
 
 function ModuleList() {
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {
+      dispatch(deleteModule(moduleId));
+    });
+  };
+
+  const handleUpdateModule = (module) => {
+    client.updateModule(module).then((status) => {
+      dispatch(updateModule(module));
+    });
+  };
+
   const { courseId } = useParams();
+  useEffect(() => {
+    findModulesForCourse(courseId).then((modules) =>
+      dispatch(setModules(modules))
+    );
+  }, [courseId]);
+
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
   const dispatch = useDispatch();
+
+  const handleAddModule = () => {
+    createModule(courseId, module).then((module) => {
+      dispatch(addModule(module));
+    });
+  };
 
   // const [modules, setModules] = useState(db.modules);
   // const [module, setModule] = useState({
@@ -71,13 +98,13 @@ function ModuleList() {
         </li>
         <button
           className="btn btn-success float-end mt-1"
-          onClick={() => dispatch(addModule({ ...module, course: courseId }))}
+          onClick={handleAddModule}
         >
           Add
         </button>
         <button
           className="btn btn-primary float-end"
-          onClick={() => dispatch(updateModule(module))}
+          onClick={() => handleUpdateModule(module)}
         >
           Update
         </button>
@@ -99,7 +126,7 @@ function ModuleList() {
             </button>
             <button
               className="btn btn-danger float-end"
-              onClick={() => dispatch(deleteModule(module._id))}
+              onClick={() => handleDeleteModule(module._id)}
             >
               Delete
             </button>
