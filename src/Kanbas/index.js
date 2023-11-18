@@ -11,7 +11,9 @@ import axios from "axios";
 
 function Kanbas() {
   const [courses, setCourses] = useState([]);
-  const URL = "http://localhost:4000/api/courses";
+  const API_BASE = process.env.REACT_APP_API_BASE;
+  const URL = `${API_BASE}/courses`;
+  // const URL = "http://localhost:4000/api/courses";
   const findAllCourses = async () => {
     const response = await axios.get(`${URL}`);
     setCourses(response.data);
@@ -34,7 +36,7 @@ function Kanbas() {
     setCourses([response.data, ...courses]);
     setCourse({
       name: "",
-      _id: "RS 000",
+      // _id: "RS 000",
       // name: "New Course",
       // number: "New Number",
       // startDate: "2023-09-10",
